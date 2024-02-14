@@ -1,0 +1,215 @@
+:root {
+    --corElement: hsl(0, 0%, 100%);
+    --corbackground:hsl(0, 0%, 98%);
+    --boxShadowColor:hsl(0deg 4.59% 54.51% / 38%);
+    --textColor:hsl(200, 15%, 8%)
+  }
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    background-color: var(--corbackground);
+    box-sizing: border-box;
+    color:var(--textColor) ;
+}
+h1{
+    font-size: 1rem;
+    margin: 2rem 0 2rem .5rem ;
+}
+button{
+    margin: 2rem .5rem 2rem 0 ; 
+    border: none;
+    border-radius: 20px;
+    padding: 0.4rem;
+    font-weight: 600;
+    position: relative;
+    background-color: var(--corElement);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px var(--boxShadowColor) ;
+    align-items: baseline;
+    margin-bottom: .5rem;
+}
+main{
+    background-color: var(--corbackground);
+    padding: 0 0.5rem 0 .5rem;
+    position: relative
+    
+}
+input{
+    width: 100%;
+    margin: auto;
+    margin-left: 0;
+    border: 0;
+    outline:0 ;
+    padding: .5rem;
+    display: block;
+   font-size: 1.125rem;
+    padding-left: 3rem;
+    box-shadow: 0 0 1rem var(--boxShadowColor);
+    position: relative;
+   /* background-color: red;*/
+}
+.bi.bi-search {
+    font-size: 1.5rem;
+    position: absolute;
+    left: 1.5rem;
+    top:0.4rem;
+}
+.btnDetail{
+    border-radius: 0;
+    padding: 0.5rem 2rem 0.5rem 3rem;
+    margin-left: 1.5rem;
+    box-shadow: 0 0 1rem var(--boxShadowColor);
+}
+#botaoVoltar{
+    position: relative;
+}
+.bi-arrow-left{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 68px;
+    left: 65px;
+    background-color: var(--corElement);
+}
+.bandeiraDetail{
+   text-align: center;
+}
+main select{
+    margin: 1rem 0 1rem 0;
+    padding: .5rem;
+    border: 0;
+    border-radius: .5rem;
+    background-color: var(--corElement);
+}
+
+.Ulistainfo > li{
+    list-style: none;
+    background-color: var(--corElement);
+}
+.detailheTitulo{
+    font-size: 1.5rem;
+}
+.item{
+    display: flex;
+    text-align: left;
+   margin: auto;
+    max-width: 90vw;
+
+    border-radius: 10px;
+    margin-bottom: 1rem;
+   height: 330px;
+   background-color: var(--corElement);
+    flex-direction: column;
+    
+}
+.bandeira{
+    max-width: 90vw;
+    align-self: center;
+    border-radius: 10px 10px 0 0;
+   /* max-height: 180px;
+    width: 100%;*/
+}
+li > h2, li > h5{
+    display: inline-block;
+    background-color: var(--corElement);
+}
+li > h2{
+    margin-bottom: 0.6rem;
+    margin-top: 0.6rem;
+}
+.infoLista{
+    font-size: 0.8rem;
+}
+.Ulistainfo{
+    padding-left: 0.4rem;
+    background-color: var(--corElement);
+}
+
+.detail{
+    display: none;
+    padding: 2rem;
+}
+h6,p{
+    display: inline-block;
+}
+h6{
+    margin-bottom: 1rem;
+}
+.UlNative{
+    float: right;
+}
+li{
+    list-style: none;
+}
+#liNativeName{
+    display: block;
+    position: absolute;
+}
+#liNativeName > h6{
+    margin-right: 2rem;
+}
+.BCountries{
+    border-radius: 0;
+    margin-left: 1rem;
+    padding: .5rem 1rem .5rem 1rem;
+    box-shadow: 0 0 1rem var(--boxShadowColor);
+}
+@media (min-width: 670px) {
+    #listaPaises{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .bandeira{
+    max-height: 180px; 
+    width: 100%;
+    }
+    h1{
+        font-size: 2rem;
+        margin: 2rem 0 2rem 5rem ;
+    }
+    button{
+        font-size: 1.5rem;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+    }
+    .item{
+        min-width: 330px;
+    }
+}
+@media (min-width: 1200px) {
+    #listaPaises{
+        /*display: grid;*/
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+   .bandeiraDetail > img{
+    float: left;
+    height:280px ;
+   }
+   .detalhesPais{
+    float: right;
+   }
+   .bi-arrow-left{
+    font-size: 1.75rem;
+   }
+}
+@media (min-width: 1700px) {
+    #listaPaises{
+        /*display: grid;*/
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+/*@media (min-width:500px) {
+    h1{
+        font-size: 1.5rem;
+        margin: 2rem 0 2rem 1rem ;
+    }
+}
+/*.Ulistainfo{
+    align-self: center;
+}*/
+
+

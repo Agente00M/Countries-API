@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países</title>
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,600;6..12,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./Assets/style.css" media="screen" />  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+
+</head>
+<body>
+    <header>
+        <h1>Where in the world?</h1>
+        <button id="changebackground">Dark Mode</button>
+    </header>
+    <main>
+        
+        
+            <input type="text" placeholder="Search for a country" />
+            <i class="bi bi-search"></i>
+            
+        <select>
+            <option value="">Filter by Region</option> 
+            <option value="Africa">Africa</option>
+            <option value="America">America</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="Oceania">Oceania</option>
+        </select>
+        <ul id="listaPaises">
+            
+        </ul>
+    </main>
+    <div id="botaoVoltar"class="detail" >
+        <button onclick="voltarPaginaInicial()" class="btnDetail">Back</button>
+            <i onclick="voltarPaginaInicial()" id="voltar"class="bi bi-arrow-left"></i>
+    </div>
+    <section class="detail">
+
+            
+    </section>
+
+
+    <script src="./Assets/api.js"></script>
+    <script src="./Assets/script.js"></script>
+    <script src="./Assets/countrie-api.js"></script>
+</body>
+</html>
