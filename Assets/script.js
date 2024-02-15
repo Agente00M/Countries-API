@@ -81,7 +81,6 @@ function teste(nome){
     PaisDetalhe(nome).then((pais = {}) =>{
         const detailHTML = DetailPais(pais)
        detalhe[1].innerHTML = detailHTML
-       console.log(detalhe)
         for (const element of detalhe) {
             element.style.display = 'block'
         }
