@@ -4,7 +4,7 @@ function CreateListaPrincipal(){
     
 return fetch(url)
     .then((Response) => Response.json())
-    .then((jsonbody) =>  /*console.log(jsonbody))*/jsonbody.map(convertendoClasse))
+    .then((jsonbody) =>  jsonbody.map(convertendoClasse))
 }
 
 
@@ -41,7 +41,7 @@ const cvtclasse = function DetalheClasse(array){
 
 
     const vetor = array[0]
-    console.log(vetor)
+
     let pais = new Paises()
     if(vetor.capital == undefined){
         pais.capital = "undefined"
@@ -65,19 +65,19 @@ const cvtclasse = function DetalheClasse(array){
 
         let chaveLanguage = Object.keys(vetor.languages)
         pais.Languages = chaveLanguage.map((key)=> vetor.languages[key])
-        console.log(pais.Currencies)
+       
 
 
 
          chavename = Object.keys(vetor.name.nativeName)
         chavename.forEach(funcao)
         pais.nativeNome = html.join('')
-        console.log(pais.nativeNome)
+
         if(vetor.borders === undefined){
             pais.BorderCountries = ['','','']    
         }else{
         pais.BorderCountries = vetor.borders
         }
-        //console.log(pais)
+
             return pais
 }
